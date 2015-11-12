@@ -151,6 +151,7 @@ public class Cocos2dxHttpURLConnection
         int suc = 0;
 
         try {
+            http.setInstanceFollowRedirects(true);
             http.connect();
         } catch (IOException e) {
             Log.e("cocos2d-x debug info", "come in connect");
